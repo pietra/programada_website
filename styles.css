@@ -1,0 +1,257 @@
+/* Default */
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Body */
+body {
+    height: 100%;
+    width:  100%;
+    background: url("images/bg3.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+ul {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #312c39;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    list-style-type: none;
+    height: 66px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+}
+
+li {
+    float: left;
+}
+
+li a:hover {
+    background-color: #663366;
+}
+
+li button:hover {
+    background-color: #663366;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: larger;
+    text-decoration: none;
+}
+
+li button {
+    background-color: #312c39;
+    padding: 22px 20px;
+    font-size: larger;
+    border: none;
+    outline: none;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.right {
+    float: right;
+}
+
+.fa {
+    padding: 13px;
+    font-size: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.right {
+    float: right;
+}
+
+@media (max-width: 650px) 
+{
+    .logo {
+        width: 70px;
+        padding: 20px 0;
+    }
+    
+    li button {
+        background-color: #312c39;
+        padding: 24px 5px;
+        font-size: small;
+        border: none;
+        outline: none;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    }
+
+    .fa {
+        padding: 8px;
+        font-size: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 14px 5px 0 0;
+    }
+
+    .right {
+        float: left;
+    }
+}
+
+
+/* Content */
+.content {
+    position: relative;
+    top: 66px;
+}
+
+.content p {
+    font-weight: lighter;
+}
+
+/* Welcome */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.welcome p {
+    font-size: 70px;
+    letter-spacing: 15px;
+}
+
+/* About */
+.aboutContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+}
+
+.about {
+    width: 50%;
+    min-width: 270px;
+    max-width: 600px;
+    line-height: 50px;
+    margin-top: 15vh;
+    float: left;
+}
+
+.title {
+    margin-bottom: 0px;
+    font-size: xx-large;
+}
+
+.description {
+    margin-top: 5px;
+    color: lightgrey;
+    font-size: large;
+}
+
+@media (max-width: 930px) 
+{
+    .title {
+        margin-bottom: 0px;
+        font-size: large;
+    }
+    
+    .description {
+        margin-top: 5px;
+        color: lightgrey;
+        font-size: medium;
+    }
+    
+    .welcome p {
+        font-size: small;
+        letter-spacing: 15px;
+        position: relative;
+    }
+}
+
+.aboutRight {
+    float: right;
+}
+
+@media (max-width: 650px) 
+{
+    .aboutRight {
+        float: left;
+    }
+}
+
+/* Photocard */
+.photoCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(49,44,57,0.8);  
+    /* this color is the same as: #312c39 */
+}
+
+.photoCard {
+    padding: 20px;
+    font-variant-caps: all-small-caps;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name {
+    margin: 0px;
+    font-size: large;
+}
+
+.course {
+    margin: 0px;
+    font-size: small;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 100px 0 20px 0;
+}
+
+.footerText {
+    font-size: medium;
+    font-weight: lighter;
+    margin: 0 0;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+@media (max-width: 650px) 
+{
+    .footerText {
+        font-size: small;
+        font-weight: lighter;
+        margin: 0 0;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+}
